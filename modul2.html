@@ -84,6 +84,10 @@
     <div class="fixed bg-white violet-border pad-1 top-0 left-0">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </div>
+    
+    <div class="fixed h-5 w-5 right-2 bottom-3 circle bg-yellow flex align-center red-border center">
+      Iss
+    </div>
     <div class="relative width-half blue-border h-24">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam facilis impedit maiores. Facere
@@ -276,9 +280,9 @@
     </section>
   </div>
   <div class="space-1"></div>
-  <div class=" red-border box-sizing bg-gray">
-    <nav class="width-quarter float-left blue-border box-sizing bg-yellow">
-      <ul class="green-border box-sizing">
+  <div class="overflow-auto red-border box-sizing bg-gray">
+    <nav class="width-quarter blue-border box-sizing ">
+      <ul>
         <li>Home</li>
         <li>Taco Menu</li>
         <li>Draft List</li>
@@ -393,6 +397,10 @@
 
   }
 
+  .center{
+    align-content: center;
+    justify-content: center;
+  }
   .relative {
     position: relative;
   }
@@ -427,6 +435,22 @@
     width: 200px;
   }
 
+  .w-4{
+    width: 4em;
+  }
+
+  .h-4{
+    height: 4em;
+  }
+
+  .w-5{
+    width: 5em;
+  }
+
+  .h-5{
+    height: 5em;
+  }
+
   .h-8 {
     height: 8em;
   }
@@ -441,6 +465,9 @@
     box-sizing: border-box;
   }
 
+  .circle {
+    border-radius: 50%;
+  }
   .pad-1 {
     padding: 1em;
   }
@@ -477,6 +504,49 @@
 
   .right-0 {
     right: 0;
+  }
+
+  .top-5 {
+    top: 5em;
+  }
+  .top-1 {
+    top: 1em;
+  }
+  .top-2 {
+    top: 2em;
+  }
+  .top-3 {
+    top: 3em;
+  }
+
+  .bottom-1 {
+    bottom: 1em;
+  }
+  .bottom-2 {
+    bottom: 2em;
+  }
+  .bottom-3 {
+    bottom: 3em;
+  }
+
+  .left-1 {
+    left: 1em;
+  }
+  .left-2 {
+    left: 2em;
+  }
+  .left-3 {
+    left: 3em;
+  }
+
+  .right-1 {
+    right: 1em;
+  }
+  .right-2 {
+    right: 2em;
+  }
+  .right-3 {
+    right: 3em;
   }
 
   .top-5 {
@@ -529,10 +599,12 @@
     }
 
     section.left-margin-quarter {
-      margin-left: 25%;
+      /* width: 80%; */
+      margin-left: 21%;
+      /* box-sizing: content-box; */
     }
   }
-
+  
   @media (max-width: 599px) {
     nav.width-quarter li {
       display: inline;
@@ -540,13 +612,14 @@
 
     nav.width-quarter {
       /* float: left; */
-      width: 100%;
+      /* width: 100%; */
     }
 
     section.left-margin-quarter {
       margin-left: 0;
     }
   }
+
 </style>
 
 </html>
